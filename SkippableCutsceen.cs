@@ -27,6 +27,7 @@ public class SkippableCutsceen : Cutsceen
             if (skipCutSceeneTimer > 0)
             {
                 skipCutSceeneTimer -= Time.deltaTime;
+                base.Update();
                 return;
             }
             timer = 0;
